@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/bottom_line">
+
+        <ImageView
+            android:id="@+id/iv_back_details"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back" />
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/axs"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/more"
+            />
+    </LinearLayout>
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical">
+         <TextView
+             android:id="@+id/tv_title_detail"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:text="马云"
+             android:textSize="20sp"
+             android:textColor="#000000"
+             android:textAlignment="center"/>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="55dp"
+             android:layout_marginTop="10dp">
+             <ImageView
+                 android:id="@+id/iv_headimg_detail"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:src="@drawable/xinhua_img"
+                 />
+             <TextView
+                 android:id="@+id/tv_author_detail"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:text="我是作者"/>
+             <Space
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="1"/>
+
+             <ImageView
+                 android:id="@+id/iv_follow_detail"
+                 android:layout_width="50dp"
+                 android:layout_height="30dp"
+                 android:src="@drawable/recommend"/>
+         </LinearLayout>
+         <ImageView
+             android:id="@+id/iv_pic_details"
+             android:layout_width="match_parent"
+             android:layout_height="180dp"
+             android:scaleType="centerInside"/>
+         <TextView
+             android:id="@+id/tv_news_details"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"/>
+     </LinearLayout>
+ </ScrollView>
+</LinearLayout>

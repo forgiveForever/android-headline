@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+<LinearLayout
+    android:id="@+id/ll_headimg_guanzhu"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout_guanzhu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tabIndicatorHeight="0dp">
+
+    </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="4dp"
+    android:background="@color/lightGray"
+    android:layout_alignParentBottom="true"/>
+    <!--关注内容区-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingTop="6dp">
+
+            <com.androidgroup.util.RoundImageView
+                android:id="@+id/iv_headimg_guanzhu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/pic_7" />
+
+            <TextView
+                android:id="@+id/tv_name_guanzhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_headimg_guanzhu"
+                android:text="野心哈塔" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name_guanzhu"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/iv_headimg_guanzhu"
+                android:text="1分钟前" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="周末快乐呀!"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/beauty2"
+            android:padding="2dp"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/beauty1"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

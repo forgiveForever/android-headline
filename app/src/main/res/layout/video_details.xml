@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<cn.jzvd.JzvdStd
+    android:id="@+id/JzvdStd"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"></cn.jzvd.JzvdStd>
+    <LinearLayout
+        android:id="@+id/authorInformation"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_headimg_video"
+            android:src="@drawable/head_img"
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_author_video"
+                android:text="战火兵刀"
+                android:textColor="#171616"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_fans_video"
+                android:text="9.1万粉丝"
+                android:textColor="#171616"
+                android:textSize="12sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingTop="8dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/guanzhu"
+                android:onClick="goToWeather"
+                android:textColor="#faf9f9"
+                android:background="#dd4f4f"
+                android:text="关注"
+                android:layout_width="60dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/xigua_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></ListView>
+
+    <LinearLayout
+        android:id="@+id/write"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+<ImageView
+    android:src="@drawable/aqw"
+    android:id="@+id/write_img"
+    android:layout_width="180dp"
+    android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/aay"
+                android:id="@+id/news_img"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:src="@drawable/b1g"
+                android:id="@+id/collection_img"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:contentDescription=""
+                android:layout_weight="1"/>
+            <ImageView
+                android:onClick="goToWeather"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ab4"
+                android:id="@+id/share_img"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.androidgroup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.weather.WeatherActivity"
+            android:label="toutiao">
+            <intent-filter>
+                <action android:name="NearbyActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="toutiao" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.video.videoDetailsActivity"
+            android:label="toutiao" />
+        <activity
+            android:name=".view.my_center.my_feedback_feedback"
+            android:label="toutiao" />
+        <activity
+            android:name=".view.my_center.my_center_activity"
+            android:label="toutiao" />
+        <activity android:name=".view.home.HomeHeadLineIntroduce" />
+        <activity
+            android:name=".view.zone.MineActivity"
+            android:label="我的">
+            <intent-filter>
+                <action android:name="StartMineView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.system.LoginActivity"
+            android:label="登陆">
+            <intent-filter>
+                <action android:name="StartLoginView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.system.RegisterActivity"
+            android:label="注册">
+            <intent-filter>
+                <action android:name="StartRegisterView" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.home.ActivityArticle" />
+        <activity
+            android:name=".view.zone.MyFllowingActivity"
+            android:label="@string/title_activity_my_fllowing"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".view.zone.MyJingDong"/>
+        <activity android:name=".view.zone.MyMessage"/>
+        <activity android:name=".view.zone.MySetting"/>
+        <activity android:name=".view.home.ActivitySearch"/>
+        <activity android:name=".view.zone.MyReaderActivity" />
+        <activity android:name=".view.zone.MyCollectionHomeActivity"></activity>
+    </application>
+
+</manifest>

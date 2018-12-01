@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:id="@+id/rl_headBox"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    >
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="取消"/>
+    <TextView
+        android:id="@+id/tv_release"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:text="发布"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+         />
+</RelativeLayout>
+    <View
+        android:id="@+id/aString"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="50dp"
+        android:background="#333333"/>
+    <RelativeLayout
+        android:id="@+id/rl_content_release"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aString"
+        android:layout_above="@id/rl_release"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_shareFresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="分享新鲜事"
+            android:textSize="15sp"
+            android:textColor="#c9c9c9"/>
+        <ImageView
+            android:id="@+id/iv_open_release"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ash"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在位置"
+            android:textColor="#c9c9c9"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/bString"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rl_content_release"
+        android:background="#333333"/>
+    <RelativeLayout
+        android:id="@+id/rl_release"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_release"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bb0"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/bay"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/imageView3" />
+        <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/baz"
+        android:layout_alignTop="@id/imageView3"
+        android:layout_toLeftOf="@id/imageView3"
+        android:layout_toStartOf="@id/imageView3"
+        android:id="@+id/imageView2" />
+
+        <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+        android:src="@drawable/bbc"
+            android:id="@+id/imageView1"
+            android:layout_marginEnd="20dp"
+            android:layout_alignTop="@id/imageView2"
+            android:layout_toLeftOf="@id/imageView2"
+            android:layout_toStartOf="@id/imageView2" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
